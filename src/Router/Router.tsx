@@ -2,7 +2,7 @@ import Loader from "@/components/loader";
 import { ComponentType, ReactElement, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "./routes";
-import { PrivateRoute } from "./privateRoute";
+import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
 
 export interface RouteType<Props = object> {
