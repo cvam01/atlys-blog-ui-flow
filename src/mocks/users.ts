@@ -1,11 +1,12 @@
 import { User } from "@/types/resource";
-
+const LOGIN_EMAIL = "test@gmail.com";
+const LOGIN_PASSWORD = "Test@1234";
 export const users: User[] = [
   {
     id: 2,
     username: "john_doe",
-    email: process.env.REACT_LOGIN_EMAIL,
-    password: process.env.REACT_LOGIN_PASSWORD,
+    email: LOGIN_EMAIL,
+    password: LOGIN_PASSWORD,
     name: "John Doe",
     createdAt: "2024-07-04T20:01:22.128Z",
     profile_picture: "/user-images/user-1.png",

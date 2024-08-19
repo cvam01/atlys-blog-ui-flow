@@ -1,13 +1,11 @@
-import MainLogo from "@/assets/svg-components/MainLogo";
-import LoginFormCard from "@/components/LoginFormCard";
+import { LoginFormCard } from "@/widgets/LoginFormCard";
+import Logo from "@/assets/logo.svg";
 
 const LoginPage = () => {
-  console.log("hIIIIII");
   return (
     <div className="mobile:p-5 flex h-screen min-h-[600px] flex-col items-center justify-center p-10">
-      {/* <MainLogo className="mb-12" />
-      <LoginFormCard /> */}
-      Hiii
+      <img src={Logo} className="logo react" alt="logo" />
+      <LoginFormCard />
     </div>
   );
 };
