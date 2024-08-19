@@ -1,4 +1,4 @@
-import ChatBubble from "@/assets/chat-buble.svg";
+import ChatBubble from "@/assets/svg-components/ChatBubble";
 import { useAppSelector } from "@/hooks/redux";
 import { cn } from "@/utils/stringUtils";
 import dayjs from "dayjs";
@@ -53,7 +53,7 @@ export const PostCard = ({
           <p className="text-base font-normal text-white-150">{text}</p>
         </div>
         <div className="flex cursor-pointer items-center gap-2">
-          <img src={ChatBubble} alt="eye icon" />
+          <ChatBubble />
           <span className="text-sm font-medium text-white-150">
             {no_of_comments} comments
           </span>

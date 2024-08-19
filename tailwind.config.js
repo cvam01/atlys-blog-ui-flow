@@ -4,7 +4,19 @@ import defaultTheme from "tailwindcss/defaultTheme";
 export default {
   content: ["./src/**/*.tsx", "./src/**/*.css"],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
+      screens: {
+        mobile: { max: "639px" },
+        tablet: { min: "640px", max: "1023px" },
+        desktop: { min: "1024px" },
+      },
       fontFamily: {
         inter: ['"Inter"', ...defaultTheme.fontFamily.sans],
       },

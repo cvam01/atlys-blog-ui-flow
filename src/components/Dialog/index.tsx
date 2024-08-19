@@ -1,7 +1,7 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import * as React from "react";
-import { LockClosedIcon } from "@heroicons/react/24/outline";
 import { cn } from "@/utils/stringUtils";
+import CloseIcon from "@/assets/svg-components/CloseIcon";
 
 const Dialog = DialogPrimitive.Root;
 
@@ -42,7 +42,7 @@ const DialogContent = React.forwardRef<
     >
       {children}
       <DialogPrimitive.Close className="absolute right-[66px] top-[18px]">
-        <LockClosedIcon />
+        <CloseIcon />
       </DialogPrimitive.Close>
     </DialogPrimitive.Content>
   </DialogPortal>

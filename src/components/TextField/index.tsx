@@ -1,4 +1,4 @@
-import EyeIcon from "@/assets/eye-icon.svg";
+import EyeIcon from "@/assets/svg-components/EyeIcon";
 import { cn } from "@/utils/stringUtils";
 import { forwardRef, useId, useState } from "react";
 
@@ -100,11 +100,7 @@ const Textfield = forwardRef(
               className="group absolute right-2.5 top-1/2 -translate-y-1/2 transform outline-none"
               onClick={togglePasswordVisibility}
             >
-              <img
-                src={EyeIcon}
-                className="group-focus:stroke-white-200"
-                alt="eye icon"
-              />
+              <EyeIcon className="group-focus:stroke-white-200" />
             </button>
           )}
         </div>
